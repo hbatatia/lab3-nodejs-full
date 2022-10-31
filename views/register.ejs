@@ -1,0 +1,55 @@
+<%-
+    include("header");
+-%>
+    <div class="content">
+        <h1>Sign up</h1>
+        <form action="/api/register">
+            <table>
+                <tr>
+                    <td>Username </td>
+                    <td><input type="text" name="username" value="" required/><br></td>
+                </tr>
+                <tr>
+                    <td>Password </td>
+                    <td><input type="password" name="password" minlength="8" required /><br></td>
+                </tr>
+                <tr>
+                    <td>Society </td>
+                    <td><input type="text" name="society" value="" /><br></td>
+                </tr>
+                <tr>
+                    <td>Contact</td>
+                    <td><input type="text" name="contact" value="" /><br></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td> <input type="text" name="addres" value="" /><br></td>
+                </tr>
+                <tr>
+                    <td> Zip code</td>
+                    <td> <input type="text" name="zipcode" value="" /><br></td>
+                </tr>
+                <tr>
+                    <td> City</td>
+                    <td><input type="text" name="city" value="" /><br></td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td><input type="text" name="phone" value="" /><br></td>
+                </tr>
+                <tr>
+                    <td>Fax</td>
+                    <td> <input type="text" name="fax" value="" /><br></td>
+                </tr>
+                <tr>
+                    <td>Max outstanding (AED)</td>
+                    <td><input type="text" name="max_outstanding" value="5000" /><br></td>
+                </tr>
+
+                <input type="submit" value="Register" />
+            </table>
+        </form>
+    </div>
+    <%-
+    include("footer");
+-%>

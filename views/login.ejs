@@ -1,0 +1,22 @@
+<%-
+    include("header");
+-%>
+    <div class="content">
+        <h1>Sign in</h1>
+        <form method="post" action="/api/login">
+            <table>
+                <tr>
+                    <td>Username </td>
+                    <td><input type="text" name="username" value=" " required/><br></td>
+                </tr>
+                <tr>
+                    <td>Password </td>
+                    <td><input type="password" name="password" minlength="4" required /><br></td>
+                </tr>
+                <tr><button type="submit">Sign-in</button></tr>
+            </table>
+        </form><br>If you do not have a client account, <a href="/register">Sign-up</a> here.
+    </div>
+    <%-
+    include("footer");
+-%>
